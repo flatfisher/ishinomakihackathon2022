@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- A-Frame -->
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <!-- AR.js -->
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Title</title>
+</head>
+
+<body style="margin: 0; overflow: hidden">
+    <a-scene embedded arjs vr-mode-ui="enabled: false;">
+
+        <!-- glb -->
+        <a-assets>
+            <a-asset-item id="test" src="./assets/test.glb"></a-asset-item>
+        </a-assets>
+
+        <a-assets>
+            <a-asset-item id="castle" src="./assets/castle.glb"></a-asset-item>
+        </a-assets>
+
+        <!-- Marker .patt -->
+        <a-marker type="pattern" url="./assets/pattern-sample.patt">
+            <a-entity gltf-model="#test"></a-entity>
+        </a-marker>
+
+        <a-marker type="pattern" url="./assets/pattern-sample2.patt">
+            <a-entity gltf-model="#castle"></a-entity>
+        </a-marker>
+
+        <a-entity camera></a-entity>
+    </a-scene>
+</body>
+
+</html>
