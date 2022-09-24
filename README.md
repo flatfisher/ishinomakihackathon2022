@@ -8,6 +8,12 @@
 
 Open the website on your phone, Scan the marker picture to see content through the camera.
 
+### ngrok
+
+```
+# ngrok http 8080
+```
+
 ### Edit marker and 3d model
 
 ```:html
