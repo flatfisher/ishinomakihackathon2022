@@ -16,6 +16,8 @@
 }
 
 #quiz {
+  font-family: sans-serif;
+
   display: flex;
   flex-direction: column;
 
@@ -28,4 +30,8 @@
   z-index: 10;
 
   overflow-y: scroll;
+}
+
+.quiz-container:last-of-type {
+  margin-bottom: 100px;
 }
