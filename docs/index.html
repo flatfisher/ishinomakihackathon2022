@@ -10,7 +10,7 @@
     <!-- AR.js -->
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <title>Title</title>
+    <title>v0.1</title>
 </head>
 
 <body style="margin: 0; overflow: hidden">
@@ -18,52 +18,60 @@
 
         <!-- glb -->
         <a-assets>
-            <a-asset-item id="castle" src="./assets/model/castle.glb"></a-asset-item>
+            <a-asset-item id="baseball" src="./assets/model/baseball.glb"></a-asset-item>
+        </a-assets>
+
+        <a-assets>
+            <a-asset-item id="boom" src="./assets/model/boom.glb"></a-asset-item>
+        </a-assets>
+
+        <a-assets>
+            <a-asset-item id="conveni" src="./assets/model/conveni.glb"></a-asset-item>
+        </a-assets>
+
+        <a-assets>
+            <a-asset-item id="itnav-text" src="./assets/model/itnav-text.glb"></a-asset-item>
+        </a-assets>
+
+        <a-assets>
+            <a-asset-item id="manngakann" src="./assets/model/manngakann.glb"></a-asset-item>
+        </a-assets>
+
+        <a-assets>
+            <a-asset-item id="sinjunosyoujo" src="./assets/model/sinjunosyoujo.vox.glb"></a-asset-item>
+        </a-assets>
+
+        <a-assets>
+            <a-asset-item id="untitled" src="./assets/model/untitled.vox.glb"></a-asset-item>
         </a-assets>
 
         <!-- Marker .patt -->
         <a-marker type="pattern" url="./assets/pattern/pattern-0.patt">
-            <a-entity gltf-model="#castle"></a-entity>
+            <a-entity gltf-model="#manngakann"></a-entity>
         </a-marker>
 
         <a-marker type="pattern" url="./assets/pattern/pattern-1.patt">
-            <a-entity gltf-model="#castle"></a-entity>
+            <a-entity gltf-model="#untitled"></a-entity>
         </a-marker>
 
         <a-marker type="pattern" url="./assets/pattern/pattern-2.patt">
-            <a-entity gltf-model="#castle"></a-entity>
+            <a-entity gltf-model="#sinjunosyoujo"></a-entity>
         </a-marker>
 
         <a-marker type="pattern" url="./assets/pattern/pattern-3.patt">
-            <a-entity gltf-model="#castle"></a-entity>
+            <a-entity gltf-model="#boom"></a-entity>
         </a-marker>
 
         <a-marker type="pattern" url="./assets/pattern/pattern-4.patt">
-            <a-entity gltf-model="#castle"></a-entity>
+            <a-entity gltf-model="#conveni"></a-entity>
         </a-marker>
 
         <a-marker type="pattern" url="./assets/pattern/pattern-5.patt">
-            <a-entity gltf-model="#castle"></a-entity>
+            <a-entity gltf-model="#baseball"></a-entity>
         </a-marker>
 
         <a-marker type="pattern" url="./assets/pattern/pattern-6.patt">
-            <a-entity gltf-model="#castle"></a-entity>
-        </a-marker>
-
-        <a-marker type="pattern" url="./assets/pattern/pattern-7.patt">
-            <a-entity gltf-model="#castle"></a-entity>
-        </a-marker>
-
-        <a-marker type="pattern" url="./assets/pattern/pattern-8.patt">
-            <a-entity gltf-model="#castle"></a-entity>
-        </a-marker>
-
-        <a-marker type="pattern" url="./assets/pattern/pattern-9.patt">
-            <a-entity gltf-model="#castle"></a-entity>
-        </a-marker>
-
-        <a-marker type="pattern" url="./assets/pattern/pattern-10.patt">
-            <a-entity gltf-model="#castle"></a-entity>
+            <a-entity gltf-model="#itnav-text"></a-entity>
         </a-marker>
 
         <a-entity camera></a-entity>
