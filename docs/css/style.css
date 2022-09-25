@@ -32,6 +32,14 @@
   overflow-y: scroll;
 }
 
+#quiz * {
+  font-size: 16px;
+}
+
+#quiz h2 {
+  font-size: 24px;
+}
+
 .quiz-container:last-of-type {
   margin-bottom: 100px;
 }
