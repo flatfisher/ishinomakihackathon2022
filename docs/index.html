@@ -8,7 +8,8 @@
       content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
     />
     <!-- A-Frame -->
-    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script> 
+    <script src="https://unpkg.com/aframe-particle-system-component@1.0.9/dist/aframe-particle-system-component.min.js"></script>
     <!-- AR.js -->
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
@@ -66,7 +67,8 @@
 
       <!-- Marker .patt -->
       <a-marker type="pattern" url="./assets/pattern/pattern-0.patt">
-        <a-entity scale="0.5 0.5 0.5" gltf-model="#manngakann"></a-entity>
+        <a-entity scale="0.5 0.5 0.5" position="0 -7 0" gltf-model="#manngakann"></a-entity>
+        <a-entity position="0 2.25 0" particle-system="preset: snow; size: 4; texture: ./images/star2.png;""></a-entity>
       </a-marker>
 
       <a-marker type="pattern" url="./assets/pattern/pattern-1.patt">
@@ -79,6 +81,7 @@
 
       <a-marker type="pattern" url="./assets/pattern/pattern-3.patt">
         <a-entity scale="0.5 0.5 0.5" gltf-model="#boom"></a-entity>
+        <a-entity position="0 0 0" particle-system="color: #EF0000,#44CC00"></a-entity>
       </a-marker>
 
       <a-marker type="pattern" url="./assets/pattern/pattern-4.patt">
